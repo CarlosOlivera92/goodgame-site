@@ -5,16 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+    <link rel="stylesheet" href="../styles/bootstrap.css">
+    <link rel="stylesheet" href="../styles/bootstrap-reboot.css">
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32x32.png">
 </head>
     <body>
-        <header class="header-container">
+        <header class="header container-fluid d-flex flex-column flex-md-row flex-xl-row align-items-center justify-content-around p-3 p-md-3">
             <div class="logo">
-                <img src="../assets/img/Logo.png" alt="">
+                <a href="index.html">
+                    <img src="../assets/img/Logo.png" alt="">
+                </a>
             </div>
             <nav class="navmenu">
-                <ul>
+                <ul class="d-flex m-0 p-0">
                     <li><a href="../index.html">Inicio</a></li>
                     <li><a href="noticias.html">Noticias</a></li>
                     <li><a href="juegos.html">Juegos</a></li>
@@ -33,31 +37,31 @@
                 </div>
             </div>
         </main>
-        <section class="newsletter">
-            <div class="news-content">
-                <h2>¡Suscribete a nuestro newsletter!</h2>
-                <h3>Recibirás la ultima informacion sobre tus videojuegos favoritos, futuros lanzamientos, streams y más!</h3>
-                <form action="" class="newsletter-form">
-                    <label for="newsletter-email">Email</label>
-                    <input type="email" name="newsletter-email" id="newsletter-email" placeholder="ejempo@algo.com">
-                    <button class="button" type="submit">Suscribirse</button>
+        <section class="newsletter container-fluid">
+            <div class="news-content container d-flex flex-column align-items-center p-4">
+                <p class="h4">¡Suscribete a nuestro newsletter!</p>
+                <p>Recibirás la ultima informacion sobre tus videojuegos favoritos, futuros lanzamientos, streams y más!</p>
+                <form action="" class="form">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="ejempo@algo.com">
+                        <button class="button" type="submit">Suscribirse</button>
+                    </div>
                 </form>
-            </div>
-            <div class="news-image">
             </div>
         </section>
         <section class="form">
             <h2>Contacto</h2>
-            <form action="" class="form-control">
-                <div class="item">
+            <form action="" class="form">
+                <div class="form-group">
                     <label for="name">Tu Nombre</label>
                     <input type="text" name="name" id="name" placeholder="Fulanito de Tal">
                 </div>
-                <div class="item">
+                <div class="form-group">
                     <label for="email">Tu Email</label>
                     <input type="text" name="email" id="email" placeholder="ejemplo@algo.com">
                 </div>
-                <div class="item">
+                <div class="form-group">
                     <label for="message">Tu Mensaje</label>
                     <textarea name="message" id="message" cols="30" rows="10" placeholder=""></textarea>
                 </div>
@@ -79,5 +83,6 @@
                 </ul>
             </nav>
         </footer>
+        <script src="../js/bootstrap.js"></script>
     </body>
 </html>
