@@ -9,7 +9,7 @@ h1,h2,h3,h4,h5,h6,a,li,p,input,label,button,textarea,blockquote,cite {
     text-decoration: none;
     font-family: "Roboto";
     color: #fff;
-    font-size: .9rem;
+    font-size: .8rem;
 }
 input, textarea {
     border: none;
@@ -65,23 +65,12 @@ button:hover {
     text-transform: uppercase;
     text-align: center;
 }
-/*********** CARD ******************/
-.card {
-    background-color: transparent;
-    border: none;
-}
-.card .image {
-    width: auto;
-    padding: 0 0 1rem 0;
-    border-radius: 1rem;
-}
-.card .image img {
-    border-radius: inherit;
-    width: 20rem;
-    height: 12rem;
-}
-.card .text {
-    width: fit-content;
+.divider {
+    margin: .5rem 0;
+    width: 8rem;
+    height: 4px;
+    background-color: #d1363a;
+    border-radius: .5rem;
 }
 /********** HEADER *************/
 .header {
@@ -133,16 +122,94 @@ button:hover {
     font-size: 1.5rem;
 }
 /*********** LATEST NEWS ******************/
-
 .latestnews .cards .card {
-    text-align: center;
+    background-color: transparent;
+    border: none;
+}
+.latestnews .cards .card .image {
+    width: auto;
+    padding: 0 0 .5rem 0;
+}
+.latestnews .cards .card .image img {
+    border-radius: 1rem;
+    width: 20rem;
+    height: 12rem;
 }
 /*********** INTEREST ******************/
-.interest .cards .card .news-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+.interest .cards .card {
+    background-color: transparent;
+    border: none;
 }
+.interest .cards .card .image {
+    padding: 0 0 .5rem 0;
+}
+.interest .cards .card .image img {
+    border-radius: 1rem;
+    width: 20rem;
+    height: 12rem;
+}
+.interest .cards .card .news-content {
+    padding: 0;
+}
+.interest .cards .featured {
+    position: relative;
+    height: fit-content;
+    margin: 0;
+    padding: 1rem;
+}
+.interest .cards .featured:hover{
+    background-color: #111;
+    border-radius: 1rem;
+}
+.interest .cards .featured .image {
+    position: relative;
+    width: fit-content;
+    height: 20rem;
+}
+.interest .cards .featured .image:after{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    position: absolute;
+    top: 100;
+    left: 0;
+    border-radius: 1rem;
+    opacity: .7;
+}
+.interest .cards .featured .image img{
+    width: 100%;
+    height: 20rem;
+    border-radius: 1rem;
+}
+.interest .cards .featured .news-content {
+    padding: 2rem;
+    position: absolute;
+    bottom: -1rem;
+    left: 0;
+}
+.interest .cards .card .image {
+    width: 10rem;
+}
+.section-title {
+    color: #d1363a;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.section-title:not(.small):after {
+    content: "\00a0|";
+}
+.news {
+    padding: .5rem;
+    border-radius: .5rem;
+    font-weight: bolder;
+    transition: all .1s ease-in;
+}
+.news:hover {
+    background-color: #111;
+}
+
 /*********** NEWSLETTER ******************/
 .newsletter {
     background: linear-gradient(100deg, transparent 67%, #d1363a 67%, #d1363a 76.66%), 
@@ -171,4 +238,10 @@ button:hover {
 @font-face {
     font-family: "DeadZoneBold";
     src: url(../assets/fonts/Dead\ Zone\ Bold.ttf);
+}
+@media (min-width:768px) {
+    .interest .cards .card .image img {
+        width: 12rem;
+        height: 8rem;
+    }
 }
