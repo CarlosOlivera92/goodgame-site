@@ -122,18 +122,22 @@ button:hover {
     font-size: 1.5rem;
 }
 /*********** LATEST NEWS ******************/
-.latestnews .cards .card {
+ .card {
+    width: fit-content;
     background-color: transparent;
     border: none;
 }
-.latestnews .cards .card .image {
-    width: auto;
+.card .image {
+    width: 20rem;
     padding: 0 0 .5rem 0;
 }
-.latestnews .cards .card .image img {
+ .card .image img {
     border-radius: 1rem;
     width: 20rem;
     height: 12rem;
+}
+.card .text {
+    width: 20rem;
 }
 /*********** INTEREST ******************/
 .interest .cards .card {
@@ -152,10 +156,11 @@ button:hover {
     padding: 0;
 }
 .interest .cards .featured {
+    width: fit-content;
     position: relative;
     height: fit-content;
     margin: 0;
-    padding: 1rem;
+    padding:1rem;
 }
 .interest .cards .featured:hover{
     background-color: #111;
@@ -217,6 +222,131 @@ button:hover {
 }
 .newsletter .news-content p, label{
     color: #000;
+}
+/*********** GAMES *******************/
+.games .cards .card {
+    width: fit-content;
+    margin: .2rem;
+    padding: 0;
+    position: relative;
+    color: #fff;
+    transition: all .1s ease-in;
+}
+.games .cards .card:hover {
+    border: #fff solid .1rem;
+    border-radius: 1rem;
+}
+.games .cards .card .image {
+    position: relative;
+    width: fit-content;
+    height: 35rem;
+    border-radius: 1rem;
+}
+.games .cards .card .image::after {
+    content: " ";
+    width: 100%;
+    height: 35%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .75);
+    border-radius: 0 0 1rem 1rem;
+}
+.games .cards .card .image img {
+    width: 20rem;
+    height: 35rem;
+    border-radius: 1rem;
+}
+.games .cards .card .content {
+    width: 20rem;
+    position: absolute;
+    top: 65%;
+    padding: .9rem;
+    z-index: 9000;
+    height: 35%;
+}
+
+/***************** TRAILER ******************************/
+.trailers .trailer {
+    width: 30rem;
+    padding: 1rem;
+    background-color: #111;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+.trailers .trailer iframe {
+    width: 100%;
+    border-radius: 1rem;
+    margin: 1rem 0;
+}
+.trailer .content {
+    padding: 1rem;
+}
+.trailer .content p {
+    font-size: .9rem;
+}
+/***************** ABOUT ******************************/
+
+.about .cards .card {
+    width: fit-content;
+    margin: 1rem;
+}
+.about .cards .card .image img {
+    height: 12rem;
+    border-radius: 1rem 1rem 0 0;
+}
+.about .cards .card .content {
+    width: 20rem;
+}
+.about .cards .card .content p:nth-child(1) {
+    font-size: 1.1rem;
+    padding: .3rem 0;
+    font-weight: bolder;
+}
+.quote {
+    margin: 1rem;
+}
+.quote .blockquote {
+    width: 60rem;
+    border-left: 6px solid #BAC704;
+    border-radius: 1rem;
+    padding: 0.5em 10px;
+    quotes: "“" "”" "‘" "’";
+}
+.quote .blockquote::before {
+    color: #BAC704;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    vertical-align: -0.4em;
+}
+.quote .blockquote::after {
+    color: #BAC704;
+    content: close-quote;
+    font-size: 4rem;
+    line-height: 2rem;
+    vertical-align: -.5em;
+}
+.quote .blockquote p {
+    display: inline;
+    font-size: 1rem;
+}
+/*********** FORM ******************/
+.contact {
+    background-color: #ebebeb;
+    padding: 2rem;
+}
+.contact p {
+    color: #000;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+.contact .form .form-group {
+    width: 20rem;
+    margin: 1rem;
+ }
+.contact .form .form-group input, textarea, button {
+    margin: .5rem 0;
 }
 /*********** FOOTER ******************/
 .footer {
