@@ -158,7 +158,6 @@ button:hover {
 .interest .cards .featured {
     width: fit-content;
     position: relative;
-    height: fit-content;
     margin: 0;
     padding:1rem;
 }
@@ -192,6 +191,9 @@ button:hover {
     position: absolute;
     bottom: -1rem;
     left: 0;
+}
+.interest .cards .featured .news-content p + p {
+    font-size: .8rem;
 }
 .interest .cards .card .image {
     width: 10rem;
