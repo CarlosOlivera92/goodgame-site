@@ -1,0 +1,28 @@
+.quote {
+    margin: 1rem;
+    .blockquote {
+        width: 60rem;
+        border-left: 6px solid #BAC704;
+        border-radius: 1rem;
+        padding: 0.5em 10px;
+        quotes: "“" "”" "‘" "’";
+        p {
+            display: inline;
+            font-size: 1rem;
+        }
+        &::after {
+            color: #BAC704;
+            content: close-quote;
+            font-size: 4rem;
+            line-height: 2rem;
+            vertical-align: -.5em;
+        }
+        &::before {
+            color: #BAC704;
+            content: open-quote;
+            font-size: 4em;
+            line-height: 0.1em;
+            vertical-align: -0.4em;
+        }
+    }
+}

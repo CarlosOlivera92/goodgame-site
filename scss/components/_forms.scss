@@ -1,0 +1,12 @@
+.contact .form {
+    .form-group {
+        width: 20rem;
+        margin: 1rem;
+        label {
+            color: #000;
+        }
+        input,textarea,button {
+            margin: .5rem 0;
+        }
+    }
+}

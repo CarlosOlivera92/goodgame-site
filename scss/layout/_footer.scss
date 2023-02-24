@@ -1,0 +1,23 @@
+.footer {
+    background-color: #111;
+    .footer-logo {
+        img {
+            width: 6rem;
+            margin: 0 .5rem;
+        }
+    }
+    .footer-nav {
+        ul {
+            li {
+                margin: 0 .5rem;
+                a {
+                    color: #8a8887;
+                    transition: all .1s ease;
+                    &:hover {
+                        color: #b1aead;
+                    }
+                }
+            }
+        }
+    }
+}

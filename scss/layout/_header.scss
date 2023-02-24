@@ -1,0 +1,21 @@
+.header {
+    background-color: #111;
+    .logo {
+        img {
+            height: 4rem;
+        }
+    }
+    .navmenu {
+        ul {
+            li {
+                margin: 0 .5rem;
+                a {
+                    &:hover {
+                        color: #DBFE7A;
+                    }
+                }
+            }
+
+        }
+    }
+}

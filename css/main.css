@@ -1,7 +1,9 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500&display=swap");
-body {
-  background-color: #1f1f1f;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 h1, h2, h3, h4, h5, h6, a, li, p, input, label, button, textarea, blockquote, cite {
@@ -10,6 +12,48 @@ h1, h2, h3, h4, h5, h6, a, li, p, input, label, button, textarea, blockquote, ci
   font-family: "Roboto";
   color: #fff;
   font-size: 0.9rem;
+}
+
+.title {
+  font-family: "DeadZoneBold";
+  font-size: 0.8rem;
+  background: linear-gradient(90deg, #BAC704 0%, #E1FE91 16.67%, #DBFE7A 33.33%, #E1FE91 42.19%, #E1FE91 45.31%, #FFFFFF 54.69%, #FFFFFF 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.subtitle {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.plataform {
+  width: fit-content;
+  font-size: 0.7rem;
+  font-weight: bolder;
+  border-radius: 0.4rem;
+  padding: 0.1rem;
+  margin: 1rem 0;
+  color: #d1363a;
+}
+
+@font-face {
+  font-family: "DeadZoneBold";
+  src: url(../assets/fonts/Dead\ Zone\ Bold.ttf);
+}
+.contact .form .form-group {
+  width: 20rem;
+  margin: 1rem;
+}
+.contact .form .form-group label {
+  color: #000;
+}
+.contact .form .form-group input, .contact .form .form-group textarea, .contact .form .form-group button {
+  margin: 0.5rem 0;
 }
 
 input, textarea {
@@ -45,160 +89,41 @@ button:hover {
   background-color: red;
 }
 
-.plataform {
-  width: fit-content;
-  font-size: 0.7rem;
-  font-weight: bolder;
-  border-radius: 0.4rem;
-  padding: 0.1rem;
-  margin: 1rem 0;
-  color: #d1363a;
-}
-
-.title {
-  font-family: "DeadZoneBold";
-  font-size: 0.8rem;
-  background: linear-gradient(90deg, #BAC704 0%, #E1FE91 16.67%, #DBFE7A 33.33%, #E1FE91 42.19%, #E1FE91 45.31%, #FFFFFF 54.69%, #FFFFFF 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
-.subtitle {
-  margin-top: 1rem;
-  font-size: 1.5rem;
-  font-weight: bolder;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.divider {
-  margin: 0.5rem 0;
-  width: 8rem;
-  height: 4px;
-  background-color: #d1363a;
-  border-radius: 0.5rem;
-}
-
-/********** HEADER *************/
-.header {
-  background-color: #111;
-}
-
-.header .logo img {
-  height: 4rem;
-}
-
-.header .navmenu ul li {
-  margin: 0 0.5rem;
-}
-
-.header .navmenu ul li a:hover {
-  color: #DBFE7A;
-}
-
-/************* HERO **************/
-.hero {
-  position: relative;
-}
-
-.hero .hero-img {
-  position: relative;
-  height: 8rem;
-  background-image: url("https://images4.alphacoders.com/478/thumb-1920-47816.jpg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.hero-img:after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-color: #040207;
-  position: absolute;
-  top: 0;
-  opacity: 0.7;
-}
-
-.hero .hero-text {
-  font-size: 0.6rem;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.hero .hero-text .title {
-  font-size: 1.5rem;
-}
-
-/*********** LATEST NEWS ******************/
 .card {
   width: fit-content;
   background-color: transparent;
   border: none;
 }
-
 .card .image {
   width: 20rem;
   padding: 0 0 0.5rem 0;
 }
-
 .card .image img {
   border-radius: 1rem;
   width: 20rem;
   height: 12rem;
 }
-
 .card .text {
   width: 20rem;
 }
 
-/*********** INTEREST ******************/
-.interest .cards .card {
-  background-color: transparent;
-  border: none;
-}
-
-.interest .cards .card .image {
-  padding: 0 0 0.5rem 0;
-}
-
-.interest .cards .card .image img {
-  border-radius: 1rem;
-  width: 20rem;
-  height: 12rem;
-}
-
-.interest .cards .card .news-content {
-  padding: 0;
-}
-
-.interest .cards .featured {
+.featured {
   width: fit-content;
   position: relative;
   margin: 0;
   padding: 1rem;
 }
-
-.interest .cards .featured:hover {
-  background-color: #111;
-  border-radius: 1rem;
-}
-
-.interest .cards .featured .image {
+.featured .image {
   position: relative;
   width: fit-content;
   height: 20rem;
 }
-
-.interest .cards .featured .image:after {
+.featured .image img {
+  width: 100%;
+  height: 20rem;
+  border-radius: 1rem;
+}
+.featured .image::after {
   content: " ";
   width: 100%;
   height: 100%;
@@ -209,61 +134,21 @@ button:hover {
   border-radius: 1rem;
   opacity: 0.7;
 }
-
-.interest .cards .featured .image img {
-  width: 100%;
-  height: 20rem;
-  border-radius: 1rem;
-}
-
-.interest .cards .featured .news-content {
+.featured .news-content {
   padding: 2rem;
   position: absolute;
   bottom: -1rem;
   left: 0;
 }
-
-.interest .cards .featured .news-content p + p {
+.featured .news-content p + p {
   font-size: 0.8rem;
 }
-
-.interest .cards .card .image {
-  width: 10rem;
-}
-
-.section-title {
-  color: #d1363a;
-  font-size: 1.3rem;
-  font-weight: bolder;
-  text-transform: uppercase;
-}
-
-.section-title:not(.small):after {
-  content: " |";
-}
-
-.news {
-  padding: 0.5rem;
-  border-radius: 0.5rem;
-  font-weight: bolder;
-  transition: all 0.1s ease-in;
-}
-
-.news:hover {
+.featured:hover {
   background-color: #111;
+  border-radius: 1rem;
 }
 
-/*********** NEWSLETTER ******************/
-.newsletter {
-  background: linear-gradient(100deg, transparent 67%, #d1363a 67%, #d1363a 76.66%), #ebebeb;
-}
-
-.newsletter .news-content p, label {
-  color: #000;
-}
-
-/*********** GAMES *******************/
-.games .cards .card {
+.games .card {
   width: fit-content;
   margin: 0.2rem;
   padding: 0;
@@ -271,20 +156,18 @@ button:hover {
   color: #fff;
   transition: all 0.1s ease-in;
 }
-
-.games .cards .card:hover {
-  border: #fff solid 0.1rem;
-  border-radius: 1rem;
-}
-
-.games .cards .card .image {
+.games .card .image {
   position: relative;
   width: fit-content;
   height: 35rem;
   border-radius: 1rem;
 }
-
-.games .cards .card .image::after {
+.games .card .image img {
+  width: 20rem;
+  height: 35rem;
+  border-radius: 1rem;
+}
+.games .card .image::after {
   content: " ";
   width: 100%;
   height: 35%;
@@ -294,14 +177,7 @@ button:hover {
   background-color: rgba(0, 0, 0, 0.75);
   border-radius: 0 0 1rem 1rem;
 }
-
-.games .cards .card .image img {
-  width: 20rem;
-  height: 35rem;
-  border-radius: 1rem;
-}
-
-.games .cards .card .content {
+.games .card .content {
   width: 20rem;
   position: absolute;
   top: 65%;
@@ -309,55 +185,206 @@ button:hover {
   z-index: 9000;
   height: 35%;
 }
+.games .card:hover {
+  border: #fff solid 0.1rem;
+  border-radius: 1rem;
+}
 
-/***************** TRAILER ******************************/
-.trailers .trailer {
+.about .card {
+  width: fit-content;
+  margin: 1rem;
+}
+.about .card .image img {
+  height: 12rem;
+  border-radius: 1rem 1rem 0 0;
+}
+.about .card .content {
+  width: 20rem;
+}
+.about .card .content p:nth-child(1) {
+  font-size: 1.1rem;
+  padding: 0.3rem 0;
+  font-weight: bolder;
+}
+
+body {
+  background-color: #1f1f1f;
+}
+
+.divider {
+  margin: 0.5rem 0;
+  width: 8rem;
+  height: 4px;
+  background-color: #d1363a;
+  border-radius: 0.5rem;
+}
+
+.newsletter {
+  background: linear-gradient(100deg, transparent 67%, #d1363a 67%, #d1363a 76.66%), #ebebeb;
+}
+.newsletter .news-content p, .newsletter .news-content label, .newsletter .news-content input {
+  color: #000;
+}
+
+.header {
+  background-color: #111;
+}
+.header .logo img {
+  height: 4rem;
+}
+.header .navmenu ul li {
+  margin: 0 0.5rem;
+}
+.header .navmenu ul li a:hover {
+  color: #DBFE7A;
+}
+
+.footer {
+  background-color: #111;
+}
+.footer .footer-logo img {
+  width: 6rem;
+  margin: 0 0.5rem;
+}
+.footer .footer-nav ul li {
+  margin: 0 0.5rem;
+}
+.footer .footer-nav ul li a {
+  color: #8a8887;
+  transition: all 0.1s ease;
+}
+.footer .footer-nav ul li a:hover {
+  color: #b1aead;
+}
+
+.hero {
+  position: relative;
+}
+.hero .image {
+  position: relative;
+  height: 8rem;
+  background-image: url("https://images4.alphacoders.com/478/thumb-1920-47816.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hero .image::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #040207;
+  position: absolute;
+  top: 0;
+  opacity: 0.7;
+}
+.hero .content {
+  font-size: 0.6rem;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.hero .content .title {
+  font-size: 1.5rem;
+}
+
+.interest .card .image {
+  width: 10rem;
+}
+.interest .card .news-content {
+  padding: 0;
+}
+
+.section-title {
+  color: #d1363a;
+  font-size: 1.3rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+.section-title:not(.small)::after {
+  content: " |";
+}
+
+.news {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-weight: bolder;
+  transition: all 0.1s ease-in;
+}
+.news:hover {
+  background-color: #111;
+}
+
+@media (min-width: 768px) {
+  .interest .card .image img {
+    width: 12rem;
+    height: 8rem;
+  }
+}
+.games .card {
+  width: fit-content;
+  margin: 0.2rem;
+  padding: 0;
+  position: relative;
+  color: #fff;
+  transition: all 0.1s ease-in;
+}
+.games .card .image {
+  position: relative;
+  width: fit-content;
+  height: 35rem;
+  border-radius: 1rem;
+}
+.games .card .image img {
+  width: 20rem;
+  height: 35rem;
+  border-radius: 1rem;
+}
+.games .card .image::after {
+  content: " ";
+  width: 100%;
+  height: 35%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 0 0 1rem 1rem;
+}
+.games .card .content {
+  width: 20rem;
+  position: absolute;
+  top: 65%;
+  padding: 0.9rem;
+  z-index: 9000;
+  height: 35%;
+}
+.games .card:hover {
+  border: #fff solid 0.1rem;
+  border-radius: 1rem;
+}
+
+.trailer {
   width: 30rem;
   padding: 1rem;
   background-color: #111;
   margin: 1rem;
   border-radius: 1rem;
 }
-
-.trailers .trailer iframe {
+.trailer iframe {
   width: 100%;
   border-radius: 1rem;
   margin: 1rem 0;
 }
-
 .trailer .content {
   padding: 1rem;
 }
-
 .trailer .content p {
   font-size: 0.9rem;
-}
-
-/***************** ABOUT ******************************/
-.about .cards .card {
-  width: fit-content;
-  margin: 1rem;
-}
-
-.about .cards .card .image img {
-  height: 12rem;
-  border-radius: 1rem 1rem 0 0;
-}
-
-.about .cards .card .content {
-  width: 20rem;
-}
-
-.about .cards .card .content p:nth-child(1) {
-  font-size: 1.1rem;
-  padding: 0.3rem 0;
-  font-weight: bolder;
 }
 
 .quote {
   margin: 1rem;
 }
-
 .quote .blockquote {
   width: 60rem;
   border-left: 6px solid #BAC704;
@@ -365,7 +392,17 @@ button:hover {
   padding: 0.5em 10px;
   quotes: "“" "”" "‘" "’";
 }
-
+.quote .blockquote p {
+  display: inline;
+  font-size: 1rem;
+}
+.quote .blockquote::after {
+  color: #BAC704;
+  content: close-quote;
+  font-size: 4rem;
+  line-height: 2rem;
+  vertical-align: -0.5em;
+}
 .quote .blockquote::before {
   color: #BAC704;
   content: open-quote;
@@ -374,72 +411,14 @@ button:hover {
   vertical-align: -0.4em;
 }
 
-.quote .blockquote::after {
-  color: #BAC704;
-  content: close-quote;
-  font-size: 4rem;
-  line-height: 2rem;
-  vertical-align: -0.5em;
-}
-
-.quote .blockquote p {
-  display: inline;
-  font-size: 1rem;
-}
-
-/*********** FORM ******************/
 .contact {
   background-color: #ebebeb;
   padding: 2rem;
 }
-
 .contact p {
   color: #000;
   text-transform: uppercase;
   font-weight: bolder;
-}
-
-.contact .form .form-group {
-  width: 20rem;
-  margin: 1rem;
-}
-
-.contact .form .form-group input, textarea, button {
-  margin: 0.5rem 0;
-}
-
-/*********** FOOTER ******************/
-.footer {
-  background-color: #111;
-}
-
-.footer .footer-logo img {
-  width: 6rem;
-  margin: 0 0.5rem;
-}
-
-.footer .footer-nav ul li {
-  margin: 0 0.5rem;
-}
-
-.footer .footer-nav ul li a {
-  color: #8a8887;
-  transition: all 0.1s ease;
-}
-
-.footer .footer-nav ul li a:hover {
-  color: #b1aead;
-}
-
-@font-face {
-  font-family: "DeadZoneBold";
-  src: url(../assets/fonts/Dead\ Zone\ Bold.ttf);
-}
-@media (min-width: 768px) {
-  .interest .cards .card .image img {
-    width: 12rem;
-    height: 8rem;
-  }
 }
 
 /*# sourceMappingURL=main.css.map */

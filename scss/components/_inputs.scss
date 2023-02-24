@@ -1,0 +1,12 @@
+input, textarea {
+    border: none;
+    border-radius: .3rem;
+    padding: .5rem;
+    margin: 0 1rem;
+    border-color: #d1363a;
+}
+textarea:focus, input:focus{
+    outline-color: #d1363a;
+    border: none;
+
+}
