@@ -1,0 +1,22 @@
+{
+  "name": "goodgame-site",
+  "version": "1.0.0",
+  "description": "goodgame website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarlosOlivera92/goodgame-site.git"
+  },
+  "author": "Carlos Olivera",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CarlosOlivera92/goodgame-site/issues"
+  },
+  "homepage": "https://github.com/CarlosOlivera92/goodgame-site#readme",
+  "dependencies": {
+    "sass": "^1.58.3"
+  }
+}
