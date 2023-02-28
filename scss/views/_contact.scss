@@ -1,8 +1,10 @@
+/* CONTACT */
 .contact {
-    background-color: #ebebeb;
+    @include align-and-justify(center, center);
+    background-color: map-get($colors, light-primary);
     padding: 2rem;
     p {
-        color: #000;
+        color: map-get($colors, cblackest);
         text-transform: uppercase;
         font-weight: bolder;
     }

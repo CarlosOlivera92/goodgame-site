@@ -2,7 +2,7 @@
     margin: 1rem;
     .blockquote {
         width: 60rem;
-        border-left: 6px solid #BAC704;
+        border-left: 6px solid map-get($colors, cgreen);
         border-radius: 1rem;
         padding: 0.5em 10px;
         quotes: "“" "”" "‘" "’";
@@ -11,14 +11,14 @@
             font-size: 1rem;
         }
         &::after {
-            color: #BAC704;
+            color:map-get($colors, cgreen);
             content: close-quote;
             font-size: 4rem;
             line-height: 2rem;
             vertical-align: -.5em;
         }
         &::before {
-            color: #BAC704;
+            color: map-get($colors, cgreen);
             content: open-quote;
             font-size: 4em;
             line-height: 0.1em;

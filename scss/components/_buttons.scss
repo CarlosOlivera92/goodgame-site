@@ -1,19 +1,11 @@
 
-button {
-	padding: .375rem .75rem;
-    color: #fff;
-    font-weight: bolder;
-    border: 1px solid #d1363a;
-	border-radius: .25rem;
-	font-size: 1rem;
-    width: fit-content;
-    line-height: 1.5;
-    background-color: #d1363a;
+.button {
+    @include button-style(map-get($colors, cred), map-get($colors, cwhite))
 }
-button:hover {
-    background-color: #9c262a;
+.button:hover {
+    background-color: map-get($colors, cred);
 }
 
 :target {
-    background-color: red;
+    background-color: map-get($colors, cred);
 }

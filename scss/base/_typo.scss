@@ -1,15 +1,19 @@
-
+@font-face {
+    font-family: "DeadZoneBold";
+    src: url(../assets/fonts/Dead\ Zone\ Bold.ttf);
+}
 h1,h2,h3,h4,h5,h6,a,li,p,input,label,button,textarea,blockquote,cite {
     list-style: none;
     text-decoration: none;
     font-family: "Roboto";
-    color: #fff;
+    color:  map-get($colors, cwhite);
     font-size: .9rem;
 }
 .title {
     font-family: "DeadZoneBold";
     font-size: .8rem ;
-    background: linear-gradient(90deg, #BAC704 0%, #E1FE91 16.67%, #DBFE7A 33.33%, #E1FE91 42.19%, #E1FE91 45.31%, #FFFFFF 54.69%, #FFFFFF 100%);
+    background: background-linear-gradient(90deg, map-get($colors, cgreen), 0%, map-get($colors, cwhite));
+    /*background: linear-gradient(90deg, #BAC704 0%, #E1FE91 16.67%, #DBFE7A 33.33%, #E1FE91 42.19%, #E1FE91 45.31%, #FFFFFF 54.69%, #FFFFFF 100%);*/
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -28,9 +32,5 @@ h1,h2,h3,h4,h5,h6,a,li,p,input,label,button,textarea,blockquote,cite {
     border-radius: .4rem;
     padding: .1rem;
     margin: 1rem 0;
-    color: #d1363a;
-}
-@font-face {
-    font-family: "DeadZoneBold";
-    src: url(../assets/fonts/Dead\ Zone\ Bold.ttf);
+    color: map-get($colors, cred);
 }

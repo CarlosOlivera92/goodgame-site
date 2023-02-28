@@ -3,10 +3,9 @@ input, textarea {
     border-radius: .3rem;
     padding: .5rem;
     margin: 0 1rem;
-    border-color: #d1363a;
+    border-color: map-get($colors, cred);
 }
 textarea:focus, input:focus{
-    outline-color: #d1363a;
+    outline-color: map-get($colors, cred);
     border: none;
-
 }

@@ -1,20 +1,19 @@
 body {
-    background-color: #1f1f1f;
+    background-color: map-get($colors, secondary);
 }
 
 .divider {
     margin: .5rem 0;
     width: 8rem;
     height: 4px;
-    background-color: #d1363a;
+    background-color: map-get($colors, cred );
     border-radius: .5rem;
 }
 .newsletter {
-    background: linear-gradient(100deg, transparent 67%, #d1363a 67%, #d1363a 76.66%), 
-    #ebebeb;
+    background: background-linear-gradient(100deg, map-get($colors, cred), 67%, map-get($colors, cwhite));
     .news-content {
         p,label,input {
-            color: #000;
+            color: map-get($colors, cwhite);
         }
     }
 }

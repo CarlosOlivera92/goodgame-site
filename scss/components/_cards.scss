@@ -20,6 +20,7 @@
     position: relative;
     margin: 0;
     padding:1rem;
+    transition: all .2s ease-in-out;
     .image {
         position: relative;
         width: fit-content;
@@ -33,7 +34,7 @@
             content: " ";
             width: 100%;
             height: 100%;
-            background-color: #000;
+            background-color: map-get($colors, cblackest);
             position: absolute;
             top: 100;
             left: 0;
@@ -51,7 +52,7 @@
         }
     }
     &:hover {
-        background-color: #111;
+        background-color: map-get($colors, primary);
         border-radius: 1rem;
     }
 }
@@ -60,7 +61,7 @@
     margin: .2rem;
     padding: 0;
     position: relative;
-    color: #fff;
+    color: map-get($colors, cwhite);
     transition: all .1s ease-in;
     .image {
         position: relative;
@@ -92,7 +93,7 @@
         height: 35%;
     }
     &:hover {
-        border: #fff solid .1rem;
+        border: map-get($colors, cwhite) solid .1rem;
         border-radius: 1rem;
     }
 }

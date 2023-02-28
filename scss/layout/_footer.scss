@@ -1,5 +1,5 @@
 .footer {
-    background-color: #111;
+    background-color: map-get($colors, primary);
     .footer-logo {
         img {
             width: 6rem;
@@ -11,10 +11,10 @@
             li {
                 margin: 0 .5rem;
                 a {
-                    color: #8a8887;
+                    color: map-get($colors, cgray);
                     transition: all .1s ease;
                     &:hover {
-                        color: #b1aead;
+                        color: map-get($colors, cwhitest-gray);
                     }
                 }
             }

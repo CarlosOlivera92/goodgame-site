@@ -1,5 +1,5 @@
 .header {
-    background-color: #111;
+    background-color:map-get($colors, primary);
     .logo {
         img {
             height: 4rem;
@@ -11,11 +11,10 @@
                 margin: 0 .5rem;
                 a {
                     &:hover {
-                        color: #DBFE7A;
+                        color:map-get($colors, cgreen);
                     }
                 }
             }
-
         }
     }
 }
