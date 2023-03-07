@@ -1,3 +1,5 @@
+/*************** INPUTS ***************/
+
 input, textarea {
     border: none;
     border-radius: .3rem;
@@ -9,3 +11,4 @@ textarea:focus, input:focus{
     outline-color: map-get($colors, cred);
     border: none;
 }
+/*************** END OF INPUTS ***************/

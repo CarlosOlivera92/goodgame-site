@@ -1,3 +1,5 @@
+/*************** TYPOS ***************/
+
 @font-face {
     font-family: "DeadZoneBold";
     src: url(../assets/fonts/Dead\ Zone\ Bold.ttf);
@@ -25,6 +27,15 @@ h1,h2,h3,h4,h5,h6,a,li,p,input,label,button,textarea,blockquote,cite {
     text-transform: uppercase;
     text-align: center;
 }
+.section-title {
+    color:map-get($colors, cred);
+    font-size: 1.3rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    &:not(.small)::after {
+        content: "\00a0|";
+    }
+}
 .plataform {
     width: fit-content;
     font-size: .7rem;
@@ -34,3 +45,4 @@ h1,h2,h3,h4,h5,h6,a,li,p,input,label,button,textarea,blockquote,cite {
     margin: 1rem 0;
     color: map-get($colors, cred);
 }
+/*************** END OF TYPOS ***************/

@@ -5,31 +5,7 @@
 */
 /* Establece el contenedor como una caja flexible con dirección vertical y centra verticalmente su contenido */
 /* Define un mixin para establecer las propiedades 'align-items' y 'justify-content' en un contenedor flexible con argumentos opcionales */
-body {
-  background-color: #1f1f1f;
-}
-
-.divider {
-  margin: 0.5rem 0;
-  width: 8rem;
-  height: 4px;
-  background-color: #d1363a;
-  border-radius: 0.5rem;
-}
-
-.newsletter {
-  background: linear-gradient(100deg, transparent 67%, #d1363a 67%, #d1363a 76.66%, #fff);
-}
-.newsletter .news-content p, .newsletter .news-content label, .newsletter .news-content input {
-  color: #fff;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/*************** TYPOS ***************/
 @font-face {
   font-family: "DeadZoneBold";
   src: url(../assets/fonts/Dead\ Zone\ Bold.ttf);
@@ -60,6 +36,16 @@ h1, h2, h3, h4, h5, h6, a, li, p, input, label, button, textarea, blockquote, ci
   text-align: center;
 }
 
+.section-title {
+  color: #d1363a;
+  font-size: 1.3rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+.section-title:not(.small)::after {
+  content: " |";
+}
+
 .plataform {
   width: fit-content;
   font-size: 0.7rem;
@@ -70,6 +56,27 @@ h1, h2, h3, h4, h5, h6, a, li, p, input, label, button, textarea, blockquote, ci
   color: #d1363a;
 }
 
+/*************** END OF TYPOS ***************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*************** GLOBALS ***************/
+body {
+  background-color: #1f1f1f;
+}
+
+.divider {
+  margin: 0.5rem 0;
+  width: 8rem;
+  height: 4px;
+  background-color: #d1363a;
+  border-radius: 0.5rem;
+}
+
+/*************** END OF GLOBALS ***************/
 /* FORMS */
 .contact .form .form-group {
   width: 20rem;
@@ -90,6 +97,7 @@ h1, h2, h3, h4, h5, h6, a, li, p, input, label, button, textarea, blockquote, ci
 }
 
 /* END OF FORMS */
+/*************** INPUTS ***************/
 input, textarea {
   border: none;
   border-radius: 0.3rem;
@@ -103,6 +111,8 @@ textarea:focus, input:focus {
   border: none;
 }
 
+/*************** END OF INPUTS ***************/
+/*************** BUTTONS ***************/
 .button {
   padding: 0.375rem 0.75rem;
   color: #fff;
@@ -123,10 +133,13 @@ textarea:focus, input:focus {
   background-color: #d1363a;
 }
 
-.card {
+/*************** END OF BUTTONS ***************/
+/*************** CARDS ***************/
+.card, .about .card {
   width: fit-content;
   background-color: transparent;
   border: none;
+  margin: 1rem;
 }
 .card .image {
   width: 20rem;
@@ -141,24 +154,96 @@ textarea:focus, input:focus {
   width: 20rem;
 }
 
-.featured {
+.about .card .image img {
+  height: 12rem;
+  border-radius: 1rem 1rem 0 0;
+}
+.about .card .text p:nth-child(1) {
+  font-size: 1.1rem;
+  padding: 0.3rem 0;
+}
+
+/*************** END OF CARDS ***************/
+/*************** HEADER ***************/
+.header {
+  background-color: #111;
+}
+.header .logo img {
+  height: 4rem;
+}
+.header .navmenu ul li {
+  margin: 0 0.5rem;
+}
+.header .navmenu ul li a:hover {
+  color: #DBFE7A;
+}
+
+/*************** END OF HEADER ***************/
+/*************** HOME ***************/
+.hero {
+  position: relative;
+}
+.hero .image {
+  position: relative;
+  height: 8rem;
+  background-image: url("https://images4.alphacoders.com/478/thumb-1920-47816.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hero .image::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #111;
+  position: absolute;
+  top: 0;
+  opacity: 0.7;
+}
+.hero .content {
+  font-size: 0.6rem;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.hero .content .title {
+  font-size: 1.5rem;
+}
+
+.newsletter .news-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*************** END OF HOME ***************/
+/*************** NEWS ***************/
+.interest .card .image {
+  width: 10rem;
+}
+.interest .card .news-content {
+  padding: 0;
+}
+
+.interest .featured {
   width: fit-content;
   position: relative;
   margin: 0;
   padding: 1rem;
   transition: all 0.2s ease-in-out;
 }
-.featured .image {
+.interest .featured .image {
   position: relative;
   width: fit-content;
   height: 20rem;
 }
-.featured .image img {
+.interest .featured .image img {
   width: 100%;
   height: 20rem;
   border-radius: 1rem;
 }
-.featured .image::after {
+.interest .featured .image::after {
   content: " ";
   width: 100%;
   height: 100%;
@@ -169,20 +254,42 @@ textarea:focus, input:focus {
   border-radius: 1rem;
   opacity: 0.7;
 }
-.featured .news-content {
+.interest .featured .news-content {
   padding: 2rem;
   position: absolute;
   bottom: -1rem;
   left: 0;
 }
-.featured .news-content p + p {
+.interest .featured .news-content p + p {
   font-size: 0.8rem;
 }
-.featured:hover {
+.interest .featured:hover {
   background-color: #111;
   border-radius: 1rem;
 }
 
+.section-title {
+  color: #d1363a;
+  font-size: 1.3rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+.section-title:not(.small)::after {
+  content: " |";
+}
+
+.news {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-weight: bolder;
+  transition: all 0.1s ease-in;
+}
+.news:hover {
+  background-color: #111;
+}
+
+/*************** END OF NEWS ***************/
+/*************** GAMES ***************/
 .games .card {
   width: fit-content;
   margin: 0.2rem;
@@ -225,124 +332,6 @@ textarea:focus, input:focus {
   border-radius: 1rem;
 }
 
-.about .card {
-  width: fit-content;
-  margin: 1rem;
-}
-.about .card .image img {
-  height: 12rem;
-  border-radius: 1rem 1rem 0 0;
-}
-.about .card .content {
-  width: 20rem;
-}
-.about .card .content p:nth-child(1) {
-  font-size: 1.1rem;
-  padding: 0.3rem 0;
-  font-weight: bolder;
-}
-
-.header {
-  background-color: #111;
-}
-.header .logo img {
-  height: 4rem;
-}
-.header .navmenu ul li {
-  margin: 0 0.5rem;
-}
-.header .navmenu ul li a:hover {
-  color: #DBFE7A;
-}
-
-.footer {
-  background-color: #111;
-}
-.footer .footer-logo img {
-  width: 6rem;
-  margin: 0 0.5rem;
-}
-.footer .footer-nav ul li {
-  margin: 0 0.5rem;
-}
-.footer .footer-nav ul li a {
-  color: #8a8887;
-  transition: all 0.1s ease;
-}
-.footer .footer-nav ul li a:hover {
-  color: #b1aead;
-}
-
-.hero {
-  position: relative;
-}
-.hero .image {
-  position: relative;
-  height: 8rem;
-  background-image: url("https://images4.alphacoders.com/478/thumb-1920-47816.jpg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.hero .image::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-color: #111;
-  position: absolute;
-  top: 0;
-  opacity: 0.7;
-}
-.hero .content {
-  font-size: 0.6rem;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-}
-.hero .content .title {
-  font-size: 1.5rem;
-}
-
-.newsletter .news-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.interest .card .image {
-  width: 10rem;
-}
-.interest .card .news-content {
-  padding: 0;
-}
-
-.section-title {
-  color: #d1363a;
-  font-size: 1.3rem;
-  font-weight: bolder;
-  text-transform: uppercase;
-}
-.section-title:not(.small)::after {
-  content: " |";
-}
-
-.news {
-  padding: 0.5rem;
-  border-radius: 0.5rem;
-  font-weight: bolder;
-  transition: all 0.1s ease-in;
-}
-.news:hover {
-  background-color: #111;
-}
-
-@media (min-width: 768px) {
-  .interest .card .image img {
-    width: 12rem;
-    height: 8rem;
-  }
-}
 .trailer {
   width: 30rem;
   padding: 1rem;
@@ -360,6 +349,17 @@ textarea:focus, input:focus {
 }
 .trailer .content p {
   font-size: 0.9rem;
+}
+
+/*************** END OF GAMES ***************/
+/*************** ABOUT ***************/
+.about .card .image img {
+  height: 12rem;
+  border-radius: 1rem 1rem 0 0;
+}
+.about .card .text p:nth-child(1) {
+  font-size: 1.1rem;
+  padding: 0.3rem 0;
 }
 
 .quote {
@@ -391,7 +391,8 @@ textarea:focus, input:focus {
   vertical-align: -0.4em;
 }
 
-/* CONTACT */
+/*************** END OF ABOUT ***************/
+/*************** CONTACT ***************/
 .contact {
   display: flex;
   flex-direction: column;
@@ -405,5 +406,35 @@ textarea:focus, input:focus {
   text-transform: uppercase;
   font-weight: bolder;
 }
+
+/*************** END OF CONTACT ***************/
+/*************** FOOTER ***************/
+.footer {
+  background-color: #111;
+}
+.footer .footer-logo img {
+  width: 6rem;
+  margin: 0 0.5rem;
+}
+.footer .footer-nav ul li {
+  margin: 0 0.5rem;
+}
+.footer .footer-nav ul li a {
+  color: #8a8887;
+  transition: all 0.1s ease;
+}
+.footer .footer-nav ul li a:hover {
+  color: #b1aead;
+}
+
+/*************** END OF FOOTER ***************/
+/*************** MEDIA QUERIES ***************/
+@media (min-width: 768px) {
+  .interest .card .image img {
+    width: 12rem;
+    height: 8rem;
+  }
+}
+/*************** END OF MEDIA QUERIES ***************/
 
 /*# sourceMappingURL=main.css.map */

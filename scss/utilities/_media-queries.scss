@@ -1,0 +1,13 @@
+/*************** MEDIA QUERIES ***************/
+
+@media (min-width:768px) {
+    .interest .card {
+        .image {
+            img {
+                width: 12rem;
+                height: 8rem;
+            }
+        }
+    }
+}
+/*************** END OF MEDIA QUERIES ***************/
