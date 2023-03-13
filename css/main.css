@@ -161,12 +161,10 @@ textarea:focus, input:focus {
   line-height: 1.5;
   background-color: #d1363a;
 }
-
 .button:hover {
   background-color: #d1363a;
 }
-
-:target {
+.button:target {
   background-color: #d1363a;
 }
 
