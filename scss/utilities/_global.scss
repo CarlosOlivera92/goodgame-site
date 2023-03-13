@@ -11,5 +11,8 @@ body {
     background-color: map-get($colors, cred );
     border-radius: .5rem;
 }
+.active {
+    color: map-get($colors, cgreen );
+}
 /*************** END OF GLOBALS ***************/
 

@@ -76,7 +76,48 @@ body {
   border-radius: 0.5rem;
 }
 
+.active {
+  color: #DBFE7A;
+}
+
 /*************** END OF GLOBALS ***************/
+.carousel {
+  width: 100%;
+  height: fit-content;
+}
+.carousel .carousel-indicators {
+  z-index: 100;
+}
+.carousel .carousel-inner .carousel-item {
+  width: 100%;
+}
+.carousel .carousel-inner .carousel-item::after {
+  content: "";
+  width: 100%;
+  height: 20rem;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.7;
+  z-index: 1;
+}
+.carousel .carousel-inner .carousel-item img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  animation: aparecer 8s ease-in-out forwards;
+}
+.carousel .carousel-inner .carousel-item .carousel-caption {
+  width: 100%;
+  z-index: 100;
+  position: absolute;
+  top: 5 0%;
+  left: 0;
+  opacity: 0;
+  animation: aparecer 4s ease-in-out forwards;
+}
+
 /* FORMS */
 .contact .form .form-group {
   width: 20rem;
@@ -154,19 +195,15 @@ textarea:focus, input:focus {
   width: 20rem;
 }
 
-.about .card .image img {
-  height: 12rem;
-  border-radius: 1rem 1rem 0 0;
-}
-.about .card .text p:nth-child(1) {
-  font-size: 1.1rem;
-  padding: 0.3rem 0;
-}
-
 /*************** END OF CARDS ***************/
 /*************** HEADER ***************/
 .header {
-  background-color: #111;
+  position: fixed;
+  top: 0;
+  background-color: rgba(17, 17, 17, 0);
+  transition: background-color 0.3s ease-in-out;
+  backdrop-filter: blur(0.3rem); /* Efecto de desenfoque */
+  z-index: 100;
 }
 .header .logo img {
   height: 4rem;
@@ -215,6 +252,9 @@ textarea:focus, input:focus {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.newsletter .news-content h2 {
+  color: #000;
 }
 
 /*************** END OF HOME ***************/
@@ -266,16 +306,6 @@ textarea:focus, input:focus {
 .interest .featured:hover {
   background-color: #111;
   border-radius: 1rem;
-}
-
-.section-title {
-  color: #d1363a;
-  font-size: 1.3rem;
-  font-weight: bolder;
-  text-transform: uppercase;
-}
-.section-title:not(.small)::after {
-  content: " |";
 }
 
 .news {
@@ -357,7 +387,7 @@ textarea:focus, input:focus {
   height: 12rem;
   border-radius: 1rem 1rem 0 0;
 }
-.about .card .text p:nth-child(1) {
+.about .card .text h2 {
   font-size: 1.1rem;
   padding: 0.3rem 0;
 }
@@ -401,7 +431,7 @@ textarea:focus, input:focus {
   background-color: #ebebeb;
   padding: 2rem;
 }
-.contact p {
+.contact h2 {
   color: #000;
   text-transform: uppercase;
   font-weight: bolder;
@@ -433,6 +463,21 @@ textarea:focus, input:focus {
   .interest .card .image img {
     width: 12rem;
     height: 8rem;
+  }
+}
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+    backdrop-filter: blur(0.3rem);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.5);
+    backdrop-filter: blur(0);
   }
 }
 /*************** END OF MEDIA QUERIES ***************/

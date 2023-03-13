@@ -8,11 +8,9 @@
         }
     }
     .text {
-        p {
-            &:nth-child(1) {
-                font-size: 1.1rem;
-                padding: .3rem 0;
-            }
+        h2 {
+            font-size: 1.1rem;
+            padding: .3rem 0;
         }
     }
 }

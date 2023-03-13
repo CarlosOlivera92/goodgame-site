@@ -31,7 +31,10 @@
 }
 .newsletter {
     .news-content {
-        @include center-vertically
+        @include center-vertically;
+        h2 {
+            color: map-get($colors, cblackest );
+        }
     }
 }
 /*************** END OF HOME ***************/

@@ -18,21 +18,5 @@
         width: 20rem;
     }
 }
-.about .card {
-    @extend .card;
-    .image {
-        img {
-            height: 12rem;
-            border-radius: 1rem 1rem 0 0;
-        }
-    }
-    .text {
-        p {
-            &:nth-child(1) {
-                font-size: 1.1rem;
-                padding: .3rem 0;
-            }
-        }
-    }
-}
+
 /*************** END OF CARDS ***************/

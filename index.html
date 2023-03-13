@@ -4,38 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GoodGame</title>
+    <meta name="author" content="GoodGame Magazine">
+    <meta name="publisher" content="GoodGame Magazine">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="GoodGame, juegos, noticias, videojuegos, gaming, consolas">
+    <meta name="description" content="GoodGame - El mejor portal de videojuegos y noticias gamer. Entérate de las últimas novedades sobre God of War, Red Dead Redemption 2, Grand Theft Auto VI, Windows 11 y más.">
+    <title>GoodGame - El mejor portal de videojuegos y noticias gamer</title>
+    <link rel="canonical" href="http://127.0.0.1:5500/index.html" />
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
 </head>
     <body>
-        <header class="header container-fluid d-flex flex-column flex-md-row flex-xl-row align-items-center justify-content-around p-3 p-md-3">
+        <header id="header" class="header container-fluid d-flex flex-column flex-md-row flex-xl-row align-items-center justify-content-around p-3 p-md-3">
             <div class="logo">
-                <a href="index.html">
-                    <img src="assets/img/Logo.png" alt="goodgame-logo">
+                <a href="index.html" title="volver a inicio">
+                    <img src="assets/img/Logo.png" alt="goodgame-logo" title="goodgame-logo">
                 </a>
             </div>
             <nav class="navmenu">
                 <ul class="d-flex m-0 p-0">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="pages/noticias.html">Noticias</a></li>
-                    <li><a href="pages/juegos.html">Juegos</a></li>
-                    <li><a href="pages/nosotros.html">Nosotros</a></li>
-                    <li><a href="pages/contacto.html">Contacto</a></li>
+                    <li><a id="home-link" href="index.html" title="inicio">Inicio</a></li>
+                    <li><a id="news-link" href="pages/noticias.html" title="noticias">Noticias</a></li>
+                    <li><a id="games-link" href="pages/juegos.html" title="juegos">Juegos</a></li>
+                    <li><a id="about-link" href="pages/nosotros.html" title="nosotros">Nosotros</a></li>
+                    <li><a id="contact-link" href="pages/contacto.html" title="contacto">Contacto</a></li>
                 </ul>
             </nav>
         </header>
         <main class="container-fluid m-0 p-0">
-            <div class="hero">
-                <div class="image">
 
+            <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://cdn.shopify.com/s/files/1/0633/0381/1322/files/PS5-1.jpg?v=1649409645&width=1500" class=" " alt="joysticks" title="joysticks">
+                    <div class="carousel-caption d-md-block">
+                        <h1>Bienvenido a <span class="title">GoodGame</span></h1>
+                        <h2>El mejor portal de videojuegos y noticias gamer</h2>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f208a0b1-b95d-4e18-9279-dc040bc0300c/d6zy5m0-8cf85eaf-2d93-4725-b6ad-171adb19e8ad.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2YyMDhhMGIxLWI5NWQtNGUxOC05Mjc5LWRjMDQwYmMwMzAwY1wvZDZ6eTVtMC04Y2Y4NWVhZi0yZDkzLTQ3MjUtYjZhZC0xNzFhZGIxOWU4YWQuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.sATYmipo0uzS0s8sZ7ZaqKFj_N-yj2Z2zSHOIwpZZd4" class="" alt="wallpaper de videojuegos" title="wallpaper de videojuegos">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://britishculturalstudiescom.files.wordpress.com/2020/05/video-games-banner.png?w=1024" class="" alt="banner videojuegos" title="banner de videojuegos">
+                  </div>
                 </div>
-                <div class="content d-flex flex-column justify-content-center align-items-center">
-                    <h1>Bienvenido a <span class="title">GoodGame</span></h1>
-                    <H2>El mejor portal de videojuegos y noticias gamer</H2>
-                </div>
-            </div>
+    
+              </div>
         </main>
         
         <section class="latestnews container">
@@ -44,7 +62,7 @@
             <div class="cards row row-cols-1 row-cols-md-2 row-cols-xl-3 justify-content-around text-center">
                 <article class="card col">
                     <div class="image">
-                        <img src="https://blog.es.playstation.com/tachyon/sites/14/2022/07/b4b630d31be06e6697e1cfa16e60ad3f077fafad-scaled.jpg?resize=1088%2C612&crop_strategy=smart" alt="god of war">
+                        <img src="https://blog.es.playstation.com/tachyon/sites/14/2022/07/b4b630d31be06e6697e1cfa16e60ad3f077fafad-scaled.jpg?resize=1088%2C612&crop_strategy=smart" alt="god of war" title="god of war ragnarok">
                     </div>
                     <div class="text">
                         <p>"Sony anuncia la fecha de lanzamiento de "God of War: Ragnarok" para el 20 de Noviembre de 2021 en PlayStation 5. Los fanáticos esperan con ansias la emocionante continuación de la saga de Kratos."</p>
@@ -53,7 +71,7 @@
                 
                 <article class="card col">
                     <div class="image">
-                        <img src="https://images8.alphacoders.com/958/958091.jpg" alt="red dead redemption 2">
+                        <img src="https://images8.alphacoders.com/958/958091.jpg" alt="red dead redemption 2" title="red dead redemption 2">
                     </div>
                     <div class="text">
                         <p>"Rockstar Games lanza nuevo DLC para Red Dead Redemption 2 llamado "Outlaws to the End Co-Op Mission Pack" incluye misiones cooperativas para jugadores y nuevos desafíos para el modo historia principal."</p>
@@ -63,7 +81,7 @@
                 
                 <article class="card col">
                     <div class="image">
-                        <img src="https://top-mmo.fr/wp-content/uploads/2022/08/GTA-VI-etablira-une-reference-creative-pour-les-series-declare.jpg" alt="grand theft auto vi">
+                        <img src="https://top-mmo.fr/wp-content/uploads/2022/08/GTA-VI-etablira-une-reference-creative-pour-les-series-declare.jpg" alt="grand theft auto vi" title="granf theft auto vi">
                     </div>
                     <div class="text">
                         <p>"Rockstar Games anuncia el desarrollo de Grand Theft Auto VI, promete una experiencia de juego aún más ambiciosa y emocionante con nuevas mecánicas de juego y un mapa aún más grande que los anteriores, fecha de lanzamiento aun no anunciada"</p>
@@ -75,7 +93,7 @@
             <div class="cards d-flex flex-column align-items-center justify-content-center">
                 <article class="card row row d-xl-flex flex-xl-row my-3">
                     <div class="image col col-xl-4 mx-xl-4">
-                        <img src="https://www.bleepstatic.com/content/hl-images/2021/06/15/Windows--11.jpg" alt="windows 11" class="">
+                        <img src="https://www.bleepstatic.com/content/hl-images/2021/06/15/Windows--11.jpg" alt="windows 11" title="windows 11">
                     </div>
                     <div class="news-content col col-xl-6 mx-xl-3">
                         <p class="h5">Windows 11 <span class="plataform">PC</span> </p>
@@ -85,7 +103,7 @@
                 </article>
                 <article class="card row row d-xl-flex flex-xl-row my-3">
                     <div class="image col col-xl-4  mx-xl-4">
-                        <img src="https://www.gamerfocus.co/wp-content/uploads/2023/01/xbox-bethesda-presentacion-juegos-enero-2023.jpg" alt="xboxlogo">
+                        <img src="https://www.gamerfocus.co/wp-content/uploads/2023/01/xbox-bethesda-presentacion-juegos-enero-2023.jpg" alt="xboxlogo" title="xbox-logo">
                     </div>
 
                     <div class="news-content col col-xl-6 mx-xl-3">
@@ -112,20 +130,20 @@
         <footer class="footer container-fluid p-2 p-md-4 row m-0 align-items-center justify-content-center justify-content-md-start">
             <div class="footer-logo col-auto">
                 <a href="index.html"> 
-                    <img src="assets/img/logo-2.png" alt="goodgame-logo">
+                    <img src="assets/img/logo-2.png" alt="goodgame-logo" title="goodgame-logo">
                 </a>
             </div>
             <nav class="footer-nav col-auto">
                 <ul class="d-flex m-0 p-0">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="pages/noticias.html">Noticias</a></li>
-                    <li><a href="pages/juegos.html">Juegos</a></li>
-                    <li><a href="pages/nosotros.html">Nosotros</a></li>
-                    <li><a href="pages/contacto.html">Contacto</a></li>
+                    <li><a href="index.html" title="inicio">Inicio</a></li>
+                    <li><a href="pages/noticias.html" title="noticias">Noticias</a></li>
+                    <li><a href="pages/juegos.html" title="juegos">Juegos</a></li>
+                    <li><a href="pages/nosotros.html" title="nosotros">Nosotros</a></li>
+                    <li><a href="pages/contacto.html" title="contacto">Contacto</a></li>
                 </ul>
             </nav>
         </footer>
-
+        <script src="js/app.js"></script>
         <script src="js/bootstrap.js"></script>
     </body>
 </html>

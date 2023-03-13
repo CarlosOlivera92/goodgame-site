@@ -1,6 +1,11 @@
 /*************** HEADER ***************/
 .header {
-    background-color:map-get($colors, primary);
+    position: fixed;
+    top: 0;
+    background-color: rgba(17, 17, 17, 0);
+    transition: background-color .3s ease-in-out;
+    backdrop-filter: blur(.3rem); /* Efecto de desenfoque */
+    z-index: 100;
     .logo {
         img {
             height: 4rem;

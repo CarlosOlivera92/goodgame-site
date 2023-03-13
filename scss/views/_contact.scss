@@ -1,9 +1,10 @@
 /*************** CONTACT ***************/
+
 .contact {
     @include align-and-justify(center, center);
     background-color: map-get($colors, light-primary);
     padding: 2rem;
-    p {
+    h2 {
         color: map-get($colors, cblackest);
         text-transform: uppercase;
         font-weight: bolder;

@@ -1,28 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noticias</title>
+    <meta name="author" content="GoodGame Magazine">
+    <meta name="publisher" content="GoodGame Magazine">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="GoodGame, juegos, noticias, videojuegos, gaming, consolas">
+    <meta name="description" content="Lee las últimas noticias sobre videojuegos en GoodGame. Descubre las últimas novedades de juegos como Red Dead Redemption 2, Grand Theft Auto 6, Fallout y más.">
+    <title>Noticias de videojuegos - GoodGame</title>
+    <link rel="canonical" href="http://127.0.0.1:5500/index.html" />
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32x32.png">
 </head>
     <body>
-        <header class="header container-fluid d-flex flex-column flex-md-row flex-xl-row align-items-center justify-content-around p-3 p-md-3">
+        <header id="header" class="header container-fluid d-flex flex-column flex-md-row flex-xl-row align-items-center justify-content-around p-3 p-md-3">
             <div class="logo">
-                <a href="../index.html">
-                    <img src="../assets/img/Logo.png" alt="goodgame-logo">
+                <a href="../index.html" title="ir a inicio">
+                    <img src="../assets/img/Logo.png" alt="goodgame-logo" title="goodgame-logo">
                 </a>
             </div>
             <nav class="navmenu">
                 <ul class="d-flex m-0 p-0">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="noticias.html">Noticias</a></li>
-                    <li><a href="juegos.html">Juegos</a></li>
-                    <li><a href="nosotros.html">Nosotros</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a id="home-link" href="../index.html" title="inicio">Inicio</a></li>
+                    <li><a id="news-link" href="noticias.html" title="noticias">Noticias</a></li>
+                    <li><a id="games-link" href="juegos.html" title="juegos">Juegos</a></li>
+                    <li><a id="about-link" href="nosotros.html" title="nosotros">Nosotros</a></li>
+                    <li><a id="contact-link" href="contacto.html" title="contacto">Contacto</a></li>
                 </ul>
             </nav>
         </header>
@@ -34,7 +40,7 @@
                     
                     <article class="card">
                         <div class="image">
-                            <img src="https://images8.alphacoders.com/958/958091.jpg" alt="red dead redemption 2">
+                            <img src="https://images8.alphacoders.com/958/958091.jpg" alt="red dead redemption 2" title="red dead redemption 2">
                         </div>
                         <div class="text">
                             <p>"Rockstar Games lanza nuevo DLC para Red Dead Redemption 2 llamado "Outlaws to the End Co-Op Mission Pack" incluye misiones cooperativas para jugadores y nuevos desafíos para el modo historia principal."</p>
@@ -44,7 +50,7 @@
                     
                     <article class="card">
                         <div class="image">
-                            <img src="https://top-mmo.fr/wp-content/uploads/2022/08/GTA-VI-etablira-une-reference-creative-pour-les-series-declare.jpg" alt="grand theft auto 6">
+                            <img src="https://top-mmo.fr/wp-content/uploads/2022/08/GTA-VI-etablira-une-reference-creative-pour-les-series-declare.jpg" alt="grand theft auto 6" title="grand theft auto 6">
                         </div>
                         <div class="text">
                             <p>"Rockstar anuncia desarrollo de GTA VI, promete juego más ambicioso y emocionante con nuevas mecánicas y mapa aún más grande. Fecha de lanzamiento no anunciada."</p>
@@ -52,7 +58,7 @@
                     </article>
                     <article class="card">
                         <div class="image">
-                            <img src="https://wallpaperaccess.com/full/2144771.jpg" alt="vault boy de fallout">
+                            <img src="https://wallpaperaccess.com/full/2144771.jpg" alt="vault boy de fallout" title="vault boy de fallout">
                         </div>
                         <div class="text">
                             <p>Bethesda anuncia nuevo título de serie Fallout, con gráficos de última generación, sistema de juego mejorado, mayor profundidad en la historia y fecha de lanzamiento por confirmar.</p>
@@ -61,7 +67,7 @@
                     
                     <article class="card">
                         <div class="image">
-                            <img src="https://i0.wp.com/elbatallonpluto.com/wp-content/uploads/2016/06/0-steam-sale-gabe-newell.png?ssl=1" alt="gabe newell de steam">
+                            <img src="https://i0.wp.com/elbatallonpluto.com/wp-content/uploads/2016/06/0-steam-sale-gabe-newell.png?ssl=1" alt="gabe newell de steam" title="gabe newell de steam">
                         </div>
                         <div class="text">
                             <p>"Valve inicia ofertas de temporada en Steam con descuentos en juegos populares de grandes estudios e independientes, incluyendo ofertas diarias y flash. La oferta dura 2 semanas a partir del 17 de Junio."</p>
@@ -71,7 +77,7 @@
                     
                     <article class="card">
                         <div class="image">
-                            <img src="https://sm.ign.com/ign_es/news/s/silent-hil/silent-hill-2-remake-is-faithfully-sticking-to-original-stor_dkh6.jpg" alt="silent hill 2 remake">
+                            <img src="https://sm.ign.com/ign_es/news/s/silent-hil/silent-hill-2-remake-is-faithfully-sticking-to-original-stor_dkh6.jpg" alt="silent hill 2 remake" title="silent hill 2 remake">
                         </div>
                         <div class="text">
                             <p>"Oficial: Konami lanza remake de Silent Hill 2 para PS5 y Xbox Series X/S, con terror aún más aterrador gracias a gráficos mejorados y nuevas características. Lanzamiento en verano." </p>
@@ -79,7 +85,7 @@
                     </article>
                     <article class="card">
                         <div class="image">
-                            <img src="https://www.muycomputerpro.com/universo-lenovo/wp-content/uploads/2022/11/lenovo-amd-ryzen-7000.jpeg" alt="procesador familia ryzen 9">
+                            <img src="https://www.muycomputerpro.com/universo-lenovo/wp-content/uploads/2022/11/lenovo-amd-ryzen-7000.jpeg" alt="procesador familia ryzen 9" title="amd ryzen 9 series procesador">
                         </div>
                         <div class="text">
                             <p>"AMD lanza Ryzen 9 5950X con mejoras en soporte DDR5, PCIe 4.0, mayor rendimiento y eficiencia. Más núcleos y frecuencia base lo hacen ideal para juegos y tareas exigentes." </p>
@@ -88,7 +94,7 @@
                     
                     <article class="card">
                         <div class="image">
-                            <img src="https://acf.geeknetic.es/imgri/imagenes/auto/2020/9/2/lfj-muestra.jpg?f=webp" alt="procesador intel core 11">
+                            <img src="https://acf.geeknetic.es/imgri/imagenes/auto/2020/9/2/lfj-muestra.jpg?f=webp" alt="procesador intel core 11" title="procesador intel core 11">
                         </div>
                         <div class="text">
                             <p>"Intel lanza su nueva serie de procesadores Core 11, incluyendo el modelo Core i9-11900K de gama alta, con mejoras significativas en rendimiento y eficiencia energética. Tecnología de 10nm y más núcleos para juegos y tareas exigentes."</p>
@@ -98,7 +104,7 @@
                     
                     <article class="card">
                         <div class="image">
-                            <img src="https://w0.peakpx.com/wallpaper/473/776/HD-wallpaper-fifa-fifa-23.jpg" alt="ea fifa 23">
+                            <img src="https://w0.peakpx.com/wallpaper/473/776/HD-wallpaper-fifa-fifa-23.jpg" alt="ea fifa 23" title="ea sports fifa 23">
                         </div>
                         <div class="text">
                             <p>"FIFA 23 incluye nuevos modos de juego multijugador con competencia personalizada en línea y equipos colaborativos. Mayor inmersión con mejor inteligencia artificial del equipo contrario. ¡Experiencia de juego en línea emocionante!"</p>
@@ -107,7 +113,7 @@
                     
                     <article class="card">
                         <div class="image">
-                            <img src="https://cloudfront-us-east-1.images.arcpublishing.com/infobae/KE4UUB6IMBHFPF7CM6VQ4GVBJY.jpg" alt="minecraft">
+                            <img src="https://cloudfront-us-east-1.images.arcpublishing.com/infobae/KE4UUB6IMBHFPF7CM6VQ4GVBJY.jpg" alt="minecraft" title="minecraft">
                         </div>
                         <div class="text">
                             <p>"Minecraft lanza nueva actualización con variedad de características y mejoras, incluyendo nuevos biomas, bloques y mobs. Herramientas y armas mejoradas para experiencias más emocionantes."</p>
@@ -122,7 +128,7 @@
                     <div class="row align-items-center">
                         <div class="featured col col-md-6 col-xl-6 mx-md-2">
                             <div class="image">
-                                <img src="https://sm.ign.com/ign_latam/news/e/exclusive-/exclusive-xbox-nintendo-and-sony-wont-be-part-of-e3-2023_taxz.jpg" alt="e3 logo">
+                                <img src="https://sm.ign.com/ign_latam/news/e/exclusive-/exclusive-xbox-nintendo-and-sony-wont-be-part-of-e3-2023_taxz.jpg" alt="e3 logo" title="e3 logo">
                             </div>
                             <div class="news-content">
                                 <h3 class="h3">Exclusiva: Xbox, Nintendo y Sony no serán parte del E3 2023 <span class="plataform">GENERAL</span></h3>
@@ -159,7 +165,7 @@
                     </div>
                     <article class="card row d-xl-flex flex-xl-row my-3">
                         <div class="image col col-xl-4  mx-xl-4">
-                            <img src="https://i.blogs.es/d1dee0/battlefield-mobile-8/1366_2000.jpg" alt="battlefield mobile">
+                            <img src="https://i.blogs.es/d1dee0/battlefield-mobile-8/1366_2000.jpg" alt="battlefield mobile" title="battlefield mobile">
                         </div>
                         <div class="news-content col col-xl-6 mx-xl-3">
                             <h4 class="h4">Battlefield Mobile cancelado <span class="plataform">MOVILES</span></h4>
@@ -168,7 +174,7 @@
                         </article>
                     <article class="card row d-xl-flex flex-xl-row my-3">
                         <div class="image col col-xl-4  mx-xl-4">
-                            <img src="https://areajugones.sport.es/wp-content/uploads/2023/01/uncharted-5-1080x609.jpg" alt="uncharted 4 an thief end">
+                            <img src="https://areajugones.sport.es/wp-content/uploads/2023/01/uncharted-5-1080x609.jpg" alt="uncharted 4 a thief end" title="uncharted 4 a thief end">
                         </div>
                         <div class="news-content col col-xl-6 mx-xl-3">
 
@@ -179,7 +185,7 @@
                     </article>
                     <article class="card row d-xl-flex flex-xl-row my-3">
                         <div class="image col col-xl-4 mx-xl-4">
-                            <img src="https://www.bleepstatic.com/content/hl-images/2021/06/15/Windows--11.jpg" alt="windows 11 wallpaper">
+                            <img src="https://www.bleepstatic.com/content/hl-images/2021/06/15/Windows--11.jpg" alt="windows 11 wallpaper" title="windows 11 wallpaper">
                         </div>
                         <div class="news-content col col-xl-6 mx-xl-3 ">
                             <h4 class="h4">Windows 11 <span class="plataform">PC</span></h4>
@@ -192,20 +198,21 @@
         </main>
         <footer class="footer container-fluid p-2 p-md-4 row m-0 align-items-center justify-content-center justify-content-md-start">
             <div class="footer-logo col-auto">
-                <a href="../index.html"> 
-                    <img src="../assets/img/logo-2.png" alt="goodgame logo">
+                <a href="../index.html" title="ir a inicio"> 
+                    <img src="../assets/img/logo-2.png" alt="goodgame logo" title="goodgame-logo">
                 </a>
             </div>
             <nav class="footer-nav col-auto">
                 <ul class="d-flex m-0 p-0">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="noticias.html">Noticias</a></li>
-                    <li><a href="juegos.html">Juegos</a></li>
-                    <li><a href="nosotros.html">Nosotros</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="../index.html" title="inicio">Inicio</a></li>
+                    <li><a href="noticias.html" title="noticias">Noticias</a></li>
+                    <li><a href="juegos.html" title="juegos">Juegos</a></li>
+                    <li><a href="nosotros.html" title="nosotros">Nosotros</a></li>
+                    <li><a href="contacto.html" title="contacto">Contacto</a></li>
                 </ul>
             </nav>
         </footer>
+        <script src="../js/app.js"></script>
         <script src="../js/bootstrap.js"></script>
     </body>
 </html>

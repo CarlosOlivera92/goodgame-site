@@ -49,15 +49,6 @@
         border-radius: 1rem;
     }
 }
-.section-title {
-    color:map-get($colors, cred);
-    font-size: 1.3rem;
-    font-weight: bolder;
-    text-transform: uppercase;
-    &:not(.small)::after {
-        content: "\00a0|";
-    }
-}
 .news {
     padding: .5rem;
     border-radius: .5rem;
