@@ -13,7 +13,7 @@ h1,h2,h3,h4,h5,h6,a,li,p,input,label,button,textarea,blockquote,cite {
 }
 .title {
     font-family: "DeadZoneBold";
-    font-size: .8rem ;
+    font-size: 2rem ;
     background: background-linear-gradient(90deg, map-get($colors, cgreen), 0%, map-get($colors, cwhite));
     /*background: linear-gradient(90deg, #BAC704 0%, #E1FE91 16.67%, #DBFE7A 33.33%, #E1FE91 42.19%, #E1FE91 45.31%, #FFFFFF 54.69%, #FFFFFF 100%);*/
     background-clip: text;
