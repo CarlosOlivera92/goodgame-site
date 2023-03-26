@@ -1,11 +1,12 @@
 /*************** INPUTS ***************/
 
 input, textarea {
+    color: map-get($colors, cblackest);
     border: none;
     border-radius: .3rem;
     padding: .5rem;
     margin: 0 1rem;
-    border-color: map-get($colors, cred);
+    border-color: map-get($colors, cred) !important;
 }
 textarea:focus, input:focus{
     outline-color: map-get($colors, cred);

@@ -136,11 +136,12 @@ body {
 /* END OF FORMS */
 /*************** INPUTS ***************/
 input, textarea {
+  color: #000;
   border: none;
   border-radius: 0.3rem;
   padding: 0.5rem;
   margin: 0 1rem;
-  border-color: #d1363a;
+  border-color: #d1363a !important;
 }
 
 textarea:focus, input:focus {
